@@ -3,6 +3,8 @@ var app = angular.module("app",[]);
 //var ORIGEN = 'http://10.138.50.47/esterilizacion/'; 
 var ORIGEN = 'http://10.138.50.215/hospital/esterilizacion/' ;
 
+var ORIGEN = 'http://10.138.50.47/esterilizacion/' ;
+
 
 
 app.constant("objURL",{
