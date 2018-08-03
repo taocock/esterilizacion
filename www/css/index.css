@@ -1,0 +1,95 @@
+body, html {
+  margin:0;
+  padding:0;
+  height:100%;
+  //font-size :0.8em;  
+}
+
+ul{ 
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+.fl{float: left}
+.fr{float: right}
+.fc{clear: both}
+
+
+#wrapper {}
+#header {
+  color:white;
+  padding:10px;
+  height: 20px;
+  line-height: 20px;
+  background-color: black;
+}
+#header span{
+  padding-left: 5px;
+}
+#content {    
+  padding: 10px;
+  position: absolute;
+  border: 1px solid black;
+  top: 40px;
+  left:0px;
+  bottom: 40px;
+  right: 0px;
+  //visibility: hidden;
+}
+
+
+
+#content div.page{ 
+  padding: 5px; 
+  visibility: hidden;
+  position: absolute;  
+  border: 1px solid;
+  top:0px;
+  left:0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: scroll;;
+}
+
+#content div.active {
+  visibility: visible;
+}
+
+.capa{
+  border:1px solid black;
+  float:left;
+  width: 50%;
+}
+#footer {
+  text-align: center;
+  color:white;
+  padding: 10px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  left:0px;
+  bottom: 0px;
+  right: 0px;
+  background:black;  
+}
+
+
+#footer ul li{
+  float:left;
+  width: 25%;
+  text-align: center;
+}
+
+#footer ul li span{width: 50%;}
+
+
+/* Lista de pedidos */
+#list ul li{
+  display: block;
+  border: 1px solid black;
+  margin-top: .2em;
+  padding: .2em;
+  border-radius: .4em;
+}
+
