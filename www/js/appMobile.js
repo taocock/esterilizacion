@@ -21,9 +21,13 @@ app.service('Modelo',['$http','$rootScope','objURL',function($http,$rootScope,ob
       url = objURL.base + url;
       $http({method: 'GET', url: url}
         ).success(function(data, status, headers, config) {
+          alert("status :" + status);
+          alert("headers :" + headers);
           callback(data);        
         }).
         error(function(data, status, headers, config) {
+          alert("status :" + status);
+          alert("headers :" + headers);
           alert("error");    
 
         });     
