@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es"  ng-app="myApp" ng-controller="myCtrl">
 <head>
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
@@ -13,22 +13,43 @@
     
     
 <link rel="stylesheet" href="css/font-awesome.css">    
-    <title>Pedidos SDFSDF</title>
+    <title>Pedidos </title>
 </head>
 
 <body>
-	<div ng-app="myApp" ng-controller="myCtrl">
-		Name1 : <input type="text" ng-model="name">
+	<div class="app">
+		<div id="wrapper">
+			<div id="header">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+				<span>Pedidos a Esterilizacion</span>
+			</div>
+			<div id="content">
+				<div class="page active">
+					<p>Tu Nombre? : <input type="text" ng-model="name"></p>
+					<p> tu : {{name}}</p>					
+				</div>
+			</div>
+      <div id="footer">
+        <ul>
+          <li><span id="optionUser" class="fa fa-user-o"></span></li>
+          <li><span id="optionList" class="fa fa-list"></span></li>
+          <li><span id="optionNew" class="fa fa-file-o"></span></li>
+          <li><span id="optionOut" class="fa fa-sign-out"></span></li>
+        </ul>
+      </div> 			
+		</div>
+
+	</div>
+	<div>
+
 	</div>
 
   <script type="text/javascript" src="cordova.js"></script>
 
   <script type="text/javascript" src="js/angular.min.1.2.9.js"></script>
+  <script type="text/javascript" src="js/inicio.js"></script>
   <script type="text/javascript">
-		var app = angular.module('myApp', []);
-		app.controller('myCtrl', function($scope) {
-    	$scope.name = "John Doe";
-		});
+
   </script>
 
 </body>
