@@ -4,7 +4,7 @@ var app = angular.module("app",[]);
 
 var ORIGEN = 'http://10.138.50.215/hospital/esterilizacion/' ;
 var ORIGEN = 'http://10.138.50.47/esterilizacion/' ;
-
+var ORIGEN = 'http://192.168.1.33/hospital/esterilizacion/';
 
 
 
@@ -21,13 +21,13 @@ app.service('Modelo',['$http','$rootScope','objURL',function($http,$rootScope,ob
       url = objURL.base + url;
       $http({method: 'GET', url: url}
         ).success(function(data, status, headers, config) {
-          alert("status :" + status);
-          alert("headers :" + headers);
+          //alert("status :" + status);
+          //alert("headers :" + headers);
           callback(data);        
         }).
         error(function(data, status, headers, config) {
-          alert("status :" + status);
-          alert("headers :" + headers);
+         // alert("status :" + status);
+        //  alert("headers :" + headers);
           alert("error");    
 
         });     

@@ -26,7 +26,8 @@ app.run(['$rootScope','Modelo','$http','objURL',function($rootScope,Modelo,$http
 app.controller('ctrlMain', function($rootScope,$scope,Modelo,$http,Calendario) {
 	$scope.test = function(){
 		Modelo.get('apk/getServicios',function(response){
-			console.log($rootScope.DB);
+			//alert($rootScope.DB);
+			alert(response);
 		});
 	};
 
