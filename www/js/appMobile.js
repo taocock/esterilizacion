@@ -19,12 +19,12 @@ app.service('Modelo',['$http','$rootScope','objURL',function($http,$rootScope,ob
 	return {
     get : function(url,callback){
       url = objURL.base + url;
-      alert(url);
+      url = 'http://www.corujaweb.es/averia/index.php/apk/allEntities';
       $http({method: 'GET', url: url}
         ).success(function(data, status, headers, config) {
           //alert("status :" + status);
           //alert("headers :" + headers);
-          callback(data);        
+          callback(data.message);        
         }).
         error(function(data, status, headers, config) {
          // alert("status :" + status);
