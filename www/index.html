@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es"  ng-app="myApp" ng-controller="myCtrl">
+<html lang="es" ng-app="app" ng-controller="ctrlMain">
 <head>
   <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
@@ -13,45 +13,62 @@
     
     
 <link rel="stylesheet" href="css/font-awesome.css">    
-    <title>Pedidos </title>
+    <title>Pedidos SDFSDF</title>
 </head>
 
 <body>
-	<div class="app">
-		<div id="wrapper">
-			<div id="header">
-				<i class="fa fa-bars" aria-hidden="true"></i>
-				<span>Pedidos a Esterilizacion</span>
-			</div>
-			<div id="content">
-				<div class="page active">
-					<p>Tu Nombre? : <input type="text" ng-model="name"></p>
-					<p> tu : {{name}}</p>					
-				</div>
-			</div>
-      <div id="footer">
-        <ul>
-          <li><span id="optionUser" class="fa fa-user-o" ng-click="test()"></span></li>
-          <li><span id="optionList" class="fa fa-list"></span></li>
-          <li><span id="optionNew" class="fa fa-file-o"></span></li>
-          <li><span id="optionOut" class="fa fa-sign-out"></span></li>
-        </ul>
-      </div> 			
-		</div>
+  <div class="app">
+    <div id="wrapper">
+        <div id="header">
+          <i class="fa fa-bars" aria-hidden="true" on-click=""></i>
+          <span>Pedidos a esterilización </span>
+        </div>        
+        <div id="content">            
+            <div class="page active" id="page01" ng-include="'list.html'"></div>
+            <div class="page active1" id="page02" ng-include="'./js/prueba.html'"></div>
+            <div class="page " id="user"> User </div>
+            <div class="page " id="list">
+              <ul>
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+              </ul>
 
-	</div>
-	<div>
+            </div>
+            <div class="page dactive" id="new"></div>          
+            <div class="page" id="out"> Out  </div>
+        </div>
+        <div id="footer">
+          <ul>
+            <li><span id="optionUser" class="fa fa-user-o" ng-click="test()" ></span></li>
+            <li><span id="optionList" class="fa fa-list" ng-click="list()"></span></li>
+            <li><span id="optionNew" class="fa fa-file-o"></span></li>
+            <li><span id="optionOut" class="fa fa-sign-out"></span></li>
+          </ul>
+        </div>                        
+    </div>
+      <!--       <div id="deviceready" class="blink"></div>      -->
+  </div>
+  <!--
 
-	</div>
 
+  <script type="text/javascript" src="js/fastclick.js"></script>  
+  <script type="text/javascript" src="js/hammer.min.js"></script>
+-->
   <script type="text/javascript" src="cordova.js"></script>
 
   <script type="text/javascript" src="js/angular.min.1.2.9.js"></script>
-  <script type="text/javascript" src="js/inicio.js"></script>
+  <script type="text/javascript" src="js/angular-locate_es.es.js"></script>
+  <script type="text/javascript" src="js/appMobile.js"></script>
+  <script type="text/javascript" src="js/bases.js"></script> 
+  <script type="text/javascript" src="js/ctrlMain.js"></script>
+  <script type="text/javascript" src="js/ctrlList.js"></script>
+  <script type="text/javascript" src="js/ngCalendario.js"></script>
+  <!--
   <script type="text/javascript">
-
+      //app.initialize();
   </script>
-
+  -->
 </body>
 
 </html>
