@@ -19,6 +19,7 @@ app.service('Modelo',['$http','$rootScope','objURL',function($http,$rootScope,ob
 	return {
     get : function(url,callback){
       url = objURL.base + url;
+      alert(url);
       $http({method: 'GET', url: url}
         ).success(function(data, status, headers, config) {
           //alert("status :" + status);
